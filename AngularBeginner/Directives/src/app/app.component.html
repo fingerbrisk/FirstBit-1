@@ -1,0 +1,10 @@
+<div *ngIf="displayName; then thenBlock ; else elseBlock"></div>
+
+  <ng-template #thenBlock>
+    <h2>Directives Tutorial</h2>
+  </ng-template>
+  <ng-template #elseBlock>
+    <h2>Hidden</h2>
+  </ng-template>
+
+  <app-for [parentData]="name"></app-for>

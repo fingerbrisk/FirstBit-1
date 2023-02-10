@@ -1,0 +1,24 @@
+<html>
+<body>
+<table class="table table-striped table-dark">
+<thead>
+    <tr>
+        <th>Employee Id</th>
+        <th>Employee Name</th>
+        <th>Email Id</th>
+        <th>Actions</th>
+    </tr>
+</thead>
+ <tbody>   
+    <tr *ngFor="let employee of employees">
+        <td>{{employee.eid}}</td>
+        <td>{{employee.ename}}</td>
+        <td>{{employee.email}}</td>
+        <td>
+            <button (click)="updateEmployee(employee.eid)" class="btn-btn-info">Update</button>
+        </td>
+    </tr>
+</tbody>
+</table>
+</body>
+</html>
